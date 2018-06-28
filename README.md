@@ -71,9 +71,9 @@ We both made a prototype. We had two ideas and wanted to see which users liked t
 
 <details>
 <summary>Pictures of the prototype I made</summary>
-![img](https://github.com/fennadew/minor-vangogh/blob/master/images/picture1.png)
-![img](https://github.com/fennadew/minor-vangogh/blob/master/images/picture2.png)
-![img](https://github.com/fennadew/minor-vangogh/blob/master/images/picture3.png)
+<img src="https://github.com/fennadew/minor-vangogh/blob/master/images/picture1.png">
+<img src="https://github.com/fennadew/minor-vangogh/blob/master/images/picture2.png">
+<img src="https://github.com/fennadew/minor-vangogh/blob/master/images/picture3.png">
 </details>
 
 [Link to branch](https://github.com/Sam-Guliker/minor-vangogh/tree/personal-tour)
