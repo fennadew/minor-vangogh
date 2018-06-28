@@ -5,6 +5,8 @@ This project is made in collaboration with Sam Guliker and is commissioned by th
 
 We have designed and tested this interface in 5 weeks. The end result is a prototype of the personalized multimedia tour.
 
+![Giphy](https://github.com/fennadew/minor-vangogh/blob/master/images/gif.gif)
+
 ## Table of Contents
 1. [Branches](#branches)
 2. [Learning goals](#learning-goals)
@@ -52,7 +54,9 @@ We have written user scenario's for the flow of the interface and the interactio
 Ryan arrives at the gogh museum. This was an impulsive idea. He doesn't feel like seeing everything and spending hours in the museum. However, he would like to have some more information about the paintings, so he gets a device for the mutimedia tour. He wants to find a suitable tour quickly with interesting topics that won't take too long.
 
 <b>Result</b><br>
-The user can choose from many themes. There are 14 in total. These are quite a few themes. By keeping the themes and information about the themes on one page, the user can quickly go through the themes. All they have to do is swip left or right to add or skip a theme. The information can be folded in and out to better view the theme's image. The user can see how long the themes last and how long the tour lasts in total after adding the themes. He can look back at his selection or start the tour at any time. 
+The user can choose from many themes. There are 14 in total. These are quite a few themes. By keeping the themes and information about the themes on one page, the user can quickly go through the themes. All they have to do is swipe left or right to add or skip a theme. The information can be folded in and out to better view the theme's image. The user can see how long the themes last and how long the tour lasts in total after adding the themes. He can look back at his selection or start the tour at any time. 
+
+I was in charge of the swiping page. You can checkout the [code here]((https://github.com/fennadew/minor-vangogh/blob/master/src/components/Map.js)
 
 
 <b>User scenario tour</b><br>
@@ -65,7 +69,16 @@ In the future we would like the visitor to be able to see where he is in the bui
 ## Testing
 
 ### A/B Usability test classmates
-We both made a prototype. We had two ideas and wanted to see which users liked the most to use. I made a prototype were  you could view and add your own themes to the tour.I kept this prototype in the style of Van Gogh Museum
+We both made a prototype. We had two ideas and wanted to see which users liked the most to use. I made a prototype were  you could view and add your own themes to the tour. I kept this prototype in the style of Van Gogh Museum
+
+<details>
+<summary>Pictures of the prototype I made</summary>
+![img](https://github.com/fennadew/minor-vangogh/blob/master/images/picture1.png)
+![img](https://github.com/fennadew/minor-vangogh/blob/master/images/picture2.png)
+![img](https://github.com/fennadew/minor-vangogh/blob/master/images/picture3.png)
+</details>
+
+[Link to branch](https://github.com/Sam-Guliker/minor-vangogh/tree/personal-tour)
 
 Findings
 The following came out of the test results: 
@@ -80,7 +93,7 @@ From these test results we decided to make different elements of the prototypes 
 The user has to make a choice for each theme. He can do this to swip left or right. The info of the theme is on the same page instead of individually. The start button has been made clearer. Both prototypes also had a timer. We used the overview page of prototype A.
 
 ### Usability test museumplein
-We tested the app with (real) people at museumplein. 
+We tested our final app with (real) people at museumplein. 
 
 <b>Conclusions</b>  
 1. On the text field the swipe function was removed because it also had a click function. However, all test persons tried to swip over the text field and therefore the swipe didn't succeed. 
