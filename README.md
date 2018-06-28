@@ -154,6 +154,54 @@ We have chosen React because you can reuse components and the syntax is very eas
 In React I have worked a lot with map, filter and reduce. We had an array of objects with information about all the theme's. I had to use this data to do templating. Lists of selected and non-selected themes had to be splitten. The tour also had to be generated and all paintings had to be displayed by floor.
 
 <details>
+<summary>Code snippet of the data I have collected</summary>
+
+```
+const themes = [
+  {
+    name: "The legacy of Van Gogh",
+    src: require("../images/japon.jpg"),
+    link: "/legacy-of-van-gogh",
+    discription:
+      "Many are influenced by Van Gogh’s work: whether it be by his choice of subject, brushwork or sense of color.",
+    time: "5 min",
+    selected: false,
+    paintings: [
+      {
+        number: 89,
+        title: "Schilderij van van Dongen",
+        src: require("../images/paintings/Schilderij.jpg"),
+        floor: 3
+      }
+    ]
+  },
+  {
+    name: "Painters friends",
+    src: require("../images/stoel.jpg"),
+    link: "/painters-friends",
+    discription:
+      "It is widely believed that Vincent van Gogh found it hard to stay friends with people, and so he had a lonely life. But is this true?",
+    time: "7 min",
+    selected: false,
+    paintings: [
+      {
+        number: 53,
+        title: "Gauguin's chair",
+        src: require("../images/paintings/Chair.jpg"),
+        floor: 1
+      },
+      {
+        number: 12,
+        title: "Gauguin: van gogh painting sunflowers",
+        src: require("../images/paintings/Painting.jpg"),
+        floor: 2
+      }
+    ]
+  }
+];
+```
+
+<details>
 <summary>Code snippet map, filter en reduce</summary>
 
 ```
