@@ -56,7 +56,7 @@ Ryan arrives at the gogh museum. This was an impulsive idea. He doesn't feel lik
 The user can choose from many themes. There are 14 in total. These are quite a few themes. By keeping the themes and information about the themes on one page, the user can quickly go through the themes. All they have to do is swipe left or right to add or skip a theme. The information can be folded in and out to better view the theme's image. The user can see how long the themes last and how long the tour lasts in total after adding the themes. He can look back at his selection or start the tour at any time. 
 
 <b>I was in charge of the swiping page. You can checkout the </b>[code here](https://github.com/fennadew/minor-vangogh/blob/master/src/components/ThemesList.js)
-![Swipe](https://github.com/Sam-Guliker/minor-vangogh/blob/master/images/swipe.png)
+![Swipe](https://github.com/fennadew/minor-vangogh/blob/master/images/swipe.png)
 
 
 <b>User scenario tour</b><br>
@@ -68,7 +68,7 @@ In the future we would like the visitor to be able to see where he is in the bui
 
 <b>I was in charge of the tour page. You can checkout the </b>[code here](https://github.com/fennadew/minor-vangogh/blob/master/src/components/Map.js)
 
-![Tour](https://github.com/Sam-Guliker/minor-vangogh/blob/master/images/tour.png)
+![Tour](https://github.com/fennadew/minor-vangogh/blob/master/images/tour.png)
 
 
 ### Testing
@@ -84,7 +84,7 @@ We both made a prototype. We had two ideas and wanted to see which users liked t
 </details>
 
 
-[Link to branch](https://github.com/Sam-Guliker/minor-vangogh/tree/personal-tour)
+[Link to branch](https://github.com/fennadew/minor-vangogh/tree/personal-tour)
 
 <b>Findings</b>  
 The following came out of the test results: 
