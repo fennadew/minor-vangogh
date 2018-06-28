@@ -1,4 +1,4 @@
-# meesterproef
+# Meesterproef
 [Link to the prototype](https://sam-guliker.github.io/minor-vangogh/)
 
 This project is made in collaboration with Sam Guliker and is commissioned by the [Vincent Van Gogh museum](https://www.vangoghmuseum.nl/). The project is an addition to the existing multimedia tour. The assignment was to develop an interface which visitors from the museum can personalize their visit with by choosing various themes.
@@ -8,8 +8,16 @@ We have designed and tested this interface in 5 weeks. The end result is a proto
 ![Giphy](https://github.com/fennadew/minor-vangogh/blob/master/images/gif.gif)
 
 # Table of Contents
-1. [Branches by me](#branches-by-me)
-2. [Learning goals](#learning-goals)
+- [Meesterproef](#meesterproef)
+  - [Branches by me](#branches-by-me)
+  - [Learning goals](#learning-goals)
+    - [Real-Time Web](#real-time-web)
+    - [Webdesign](#webdesign)
+    - [Web App from Scratch](#web-app-from-scratch)
+    - [CSS to the Rescue](#css-to-the-rescue)
+    - [Performance Matters](#performance-matters)
+  - [Wishlist](#whislist)
+  - [Sources](#sources)
 
 # Branches by me
 - [arduino](https://github.com/fennadew/minor-vangogh/tree/arduino)
@@ -39,7 +47,7 @@ We have designed and tested this interface in 5 weeks. The end result is a proto
 
 # Learning goals
 
-## Real time web 
+## Real-Time Web 
 <b>Learning goal: Get real time data of a node MCU and connect this with Socket.js</b>
 
 Real time data get inside by means of a NodeMCU. I worked with this for a week to get data from a HC-SR04 Ultrasone sensor so we could measure the amount of people in front of a painting. I also connected to WIFI to post this data on a server. However, at the first feedback meeting we found out that working with sensors was not a good idea, so we moved away from the idea.
@@ -136,7 +144,9 @@ Some pictures of the test
 </details>
 
 
-## Webapp from Scratch
+## Web App from Scratch
+<b>Learning goal: Make a web app to recreate the look and feel of a native app. I also wanted to take up the challenge of making a interface that is a bit more complex. </b>
+
 We wanted to make a web app to recreate the look and feel of a native app. We also didn't want to use a database because this was not a learning goal of both of us. With a web app, all data in JavaScript will continue to exist because the website will not be reloaded when you navigate to another page. For example, we were able to transfer data we had obtained on one page to other pages. 
 
 We have chosen React because you can reuse components and the syntax is very easy. React also uses a virtual DOM. This one lives in your memory and not on your screen and looks at the most effective way to make changes to the real overseas departments. They also have a large community.
@@ -181,7 +191,9 @@ In React I have worked a lot with map, filter and reduce. We had an array of obj
 
   ```
   
-</details>
+</details>  
+
+The swipe effect was a challenge for me. I am very pleased with the result. 
 
 <details>
 <summary>Code snippet of the swipe (dislike/like) functionality</summary>
@@ -340,14 +352,22 @@ Finally, I changed the manifest with the needed icons. </p>
 
 </details>
 
-### 
-
 # Wishlist
 - [ ] When you swiped there will be a painting animation instead of a like or dislike icon
 - [ ] Loader more into Van Gogh's theme
 - [ ] More animations and smooth transitions
 - [ ] See were you are on the map
 - [ ] Get directions to paintings 
+
+
+# Sources
+- [Van gogh Museum](https://vangoghmuseum.nl/)
+- [TinyPNG](https://tinypng.com/)
+- [ReactJS](https://reactjs.org/)
+- [Spectrum](http://lvivski.com/spectrum/)
+- [Gulp](https://gulpjs.com/)
+- [Sass](https://www.npmjs.com/package/gulp-sass)
+
 
 
 # Lisence
