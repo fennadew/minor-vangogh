@@ -295,7 +295,7 @@ I tested these on custom fonts using the Chrome extension [force fonts](https://
 <img src="https://github.com/fennadew/minor-vangogh/blob/master/images/customfonts.png"  alt="zonder custom font">
 </details>
 
-* <b>Images</b>: All images have an alto attribute. If the app is ever used by a mobile screen reader, it may have added value.
+* <b>Images</b>: All images have an alt attribute. If the app is ever used by a mobile screen reader, it may have added value.
 
 * <b>Color</b>: Different colours have been used. We have made sure that the interface can also be understood by the blind. For example, the green thumb up is still clear when it is no longer green.
 
@@ -309,7 +309,7 @@ We have tested the app to see if the colors give enough contrast and if color-bl
 <img src="https://github.com/fennadew/minor-vangogh/blob/master/images/color5.png"  alt="Color blind">
 <img src="https://github.com/fennadew/minor-vangogh/blob/master/images/color6.png"  alt="Color blind">
 
-</details>
+</details>  
 
 * <b>Broadband internet</b>: A service worker has been added to the website. When the page has already been visited (and therefore cached) the loading time on and offline is 318ms and 2,37s with slow 3G. Super fast!
 
