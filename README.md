@@ -156,7 +156,7 @@ In React I have worked a lot with map, filter and reduce. We had an array of obj
 <details>
 <summary>Code snippet of the data I have collected</summary>
 
-```
+```javascript
 const themes = [
   {
     name: "The legacy of Van Gogh",
@@ -205,7 +205,7 @@ const themes = [
 <details>
 <summary>Code snippet map, filter en reduce</summary>
 
-```
+```javascript
  setFloor() {
     let floor;
 
@@ -248,7 +248,7 @@ The swipe effect was a challenge for me. I am very pleased with the result.
 <details>
 <summary>Code snippet of the swipe (dislike/like) functionality</summary>
 
-```
+```javascript
 handleTouchStart = e => {
     this.setState({
       mouseDown: true,
@@ -300,7 +300,7 @@ handleDragMove = e => {
 <details>
 <summary>Code snippet of the swiping through paintings</summary>
 
-```
+```javascript
   handleSwipeMove = e => {
     e.preventDefault();
     if (e.touches) {
@@ -408,6 +408,7 @@ Finally, I changed the manifest with the needed icons. </p>
 - [ ] More animations and smooth transitions
 - [ ] See were you are on the map
 - [ ] Get directions to paintings 
+- [ ] Add all floors
 
 
 # Sources
