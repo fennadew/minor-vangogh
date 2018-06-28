@@ -200,6 +200,7 @@ const themes = [
   }
 ];
 ```
+</details>
 
 <details>
 <summary>Code snippet map, filter en reduce</summary>
@@ -240,6 +241,7 @@ const themes = [
   ```
   
 </details>  
+
 
 The swipe effect was a challenge for me. I am very pleased with the result. 
 
