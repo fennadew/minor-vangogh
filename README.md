@@ -55,7 +55,7 @@ Ryan arrives at the gogh museum. This was an impulsive idea. He doesn't feel lik
 <b>Result</b><br>
 The user can choose from many themes. There are 14 in total. These are quite a few themes. By keeping the themes and information about the themes on one page, the user can quickly go through the themes. All they have to do is swipe left or right to add or skip a theme. The information can be folded in and out to better view the theme's image. The user can see how long the themes last and how long the tour lasts in total after adding the themes. He can look back at his selection or start the tour at any time. 
 
-<b>I was in charge of the swiping page. You can checkout the </b>[code here](https://github.com/fennadew/minor-vangogh/blob/master/src/components/ThemesList.js)
+<b>I was in charge of the swiping page. You can checkout the </b>[code here](https://github.com/fennadew/minor-vangogh/blob/master/src/components/ThemesList.js)  
 ![Swipe](https://github.com/fennadew/minor-vangogh/blob/master/images/swipe.png)
 
 
@@ -306,7 +306,6 @@ We have tested the app to see if the colors give enough contrast and if color-bl
 <img src="https://github.com/fennadew/minor-vangogh/blob/master/images/color1.png" alt="Color blind">
 <img src="https://github.com/fennadew/minor-vangogh/blob/master/images/color2.png"  alt="Color blind">
 <img src="https://github.com/fennadew/minor-vangogh/blob/master/images/color3.png"  alt="Color blind">
-<img src="https://github.com/fennadew/minor-vangogh/blob/master/images/color4.png"  alt="Color blind">
 <img src="https://github.com/fennadew/minor-vangogh/blob/master/images/color5.png"  alt="Color blind">
 <img src="https://github.com/fennadew/minor-vangogh/blob/master/images/color6.png"  alt="Color blind">
 
@@ -315,7 +314,7 @@ We have tested the app to see if the colors give enough contrast and if color-bl
 * <b>Broadband internet</b>: A service worker has been added to the website. When the page has already been visited (and therefore cached) the loading time on and offline is 318ms and 2,37s with slow 3G. Super fast!
 
  <details>
-  <summary>Screenshot van service worker</summary>
+  <summary>Screenshot of the load time</summary>
 <img src="https://github.com/fennadew/minor-vangogh/blob/master/images/network.png"  alt="service worker">
 <img src="https://github.com/fennadew/minor-vangogh/blob/master/images/3g.png"  alt="service worker">
 
