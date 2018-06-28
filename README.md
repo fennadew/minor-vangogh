@@ -1,17 +1,15 @@
 # meesterproef
-
-## Introduction
 This project is made in collaboration with Sam Guliker and is commissioned by the [Vincent Van Gogh museum](https://www.vangoghmuseum.nl/). The project is an addition to the existing multimedia tour. The assignment was to develop an interface which visitors from the museum can personalize their visit with by choosing various themes.
 
 We have designed and tested this interface in 5 weeks. The end result is a prototype of the personalized multimedia tour.
 
 ![Giphy](https://github.com/fennadew/minor-vangogh/blob/master/images/gif.gif)
 
-## Table of Contents
+# Table of Contents
 1. [Branches](#branches)
 2. [Learning goals](#learning-goals)
 
-## Branches
+# Branches
 - [arduino](https://github.com/Sam-Guliker/minor-vangogh/tree/arduino)
     <p>In this branch I started the arduino connection with the WIFI and the connection with the distance sensor, so we could measure the people who were in front of the paintings.</p>
 
@@ -37,15 +35,15 @@ We have designed and tested this interface in 5 weeks. The end result is a proto
    <p>In this branch I worked on the tour page.</p
 
 
-## Learning goals
+# Learning goals
 
 
-### Real time web 
+## Real time web 
 <b>Learning goal: Get real time data of a node MCU and connect this with Socket.js</b>
 
 Real time data get inside by means of a NodeMCU. I worked with this for a week to get data from a HC-SR04 Ultrasone sensor so we could measure the amount of people in front of a painting. I also connected to WIFI to post this data on a server. However, at the first feedback meeting we found out that working with sensors was not a good idea, so we moved away from the idea.
 
-### Web design
+## Web design
 <b>Learning goal: I want to examine the needs of the user. This is important for the interaction and flow of the design. The user must be able to achieve his goal by using the app. I am going to do this by means of user scenarios and tests.</b>
 
 We have written user scenario's for the flow of the interface and the interactions. We created or app based on the user scenario and the users needs.
@@ -56,7 +54,7 @@ Ryan arrives at the gogh museum. This was an impulsive idea. He doesn't feel lik
 <b>Result</b><br>
 The user can choose from many themes. There are 14 in total. These are quite a few themes. By keeping the themes and information about the themes on one page, the user can quickly go through the themes. All they have to do is swipe left or right to add or skip a theme. The information can be folded in and out to better view the theme's image. The user can see how long the themes last and how long the tour lasts in total after adding the themes. He can look back at his selection or start the tour at any time. 
 
-I was in charge of the swiping page. You can checkout the [code here]((https://github.com/fennadew/minor-vangogh/blob/master/src/components/Map.js)
+I was in charge of the swiping page. You can checkout the [code here](https://github.com/fennadew/minor-vangogh/blob/master/src/components/Map.js)
 
 
 <b>User scenario tour</b><br>
@@ -66,9 +64,9 @@ The app shows a floor plan for each floor and the paintings of the tour are show
 
 In the future we would like the visitor to be able to see where he is in the building. We faked that in the app for now. We would also want to be able to give them instructions on where to go.
 
-## Testing
+### Testing
 
-### A/B Usability test classmates
+#### A/B Usability test classmates
 We both made a prototype. We had two ideas and wanted to see which users liked the most to use. I made a prototype were  you could view and add your own themes to the tour. I kept this prototype in the style of Van Gogh Museum
 
 <details>
@@ -92,7 +90,7 @@ From these test results we decided to make different elements of the prototypes 
 
 The user has to make a choice for each theme. He can do this to swip left or right. The info of the theme is on the same page instead of individually. The start button has been made clearer. Both prototypes also had a timer. We used the overview page of prototype A.
 
-### Usability test museumplein
+#### Usability test museumplein
 We tested our final app with (real) people at museumplein. 
 
 <b>Conclusions</b>  
@@ -130,7 +128,7 @@ Some pictures of the test
 </details>
 
 
-### Webapp from Scratch
+## Webapp from Scratch
 We wanted to make a web app to recreate the look and feel of a native app. We also didn't want to use a database because this was not a learning goal of both of us. With a web app, all data in JavaScript will continue to exist because the website will not be reloaded when you navigate to another page. For example, we were able to transfer data we had obtained on one page to other pages. 
 
 We have chosen React because you can reuse components and the syntax is very easy. React also uses a virtual DOM. This one lives in your memory and not on your screen and looks at the most effective way to make changes to the real overseas departments. They also have a large community.
