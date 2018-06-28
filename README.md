@@ -278,6 +278,15 @@ handleDragMove = e => {
 </details>
 
 
+## CSS to the rescue
+<b>Learning goal: Make a pleasurable interface for the visitors of the van Gogh museum</b>
+
+We had thought of adding a zero state. I implemented the zero state in the main functionality of the app (the swipe) so that people immediately understand the interface. 
+
+The swipe is a pleasurable functionality because it animates your interaction. Because it's so easy and feels good, the user enjoys doing it. 
+
+The further you swip to the left or right, the more the themes change into a like or dislike. This gives the user good feedback about what he is doing. 
+
 ## Performance matters
 <b>Learning goal: Make a super fast app with high perfomance, so it gets the look and feel of a native app</b>
 
@@ -304,6 +313,8 @@ Finally, I changed the manifest with the needed icons. </p>
 - [ ] When you swiped there will be a painting animation instead of a like or dislike icon
 - [ ] Loader more into Van Gogh's theme
 - [ ] More animations and smooth transitions
+- [ ] See were you are on the map
+- [ ] Get directions to paintings 
 
 
 # Lisence
