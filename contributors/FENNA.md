@@ -62,7 +62,59 @@ The app shows a floor plan for each floor and the paintings of the tour are show
 
 In the future we would like the visitor to be able to see where he is in the building. We faked that in the app for now. We would also want to be able to give them instructions on where to go.
 
-[Here you can find the test results from the usability test at the museumplein](https://github.com/Sam-Guliker/minor-vangogh/blob/master/README.md)
+## Testing
+
+### A/B Usability test classmates
+We both made a prototype. We had two ideas and wanted to see which users liked the most to use. I made a prototype were  you could view and add your own themes to the tour.I kept this prototype in the style of Van Gogh Museum
+
+Findings
+The following came out of the test results: 
+- People who want to make a personalised tour take the time to do so
+- The start button of prototype A was too clogged up
+- People felt that the questionnaire was not personal and that it was vague
+- People did not bother to go to the info page of the theme
+
+Design Choices
+From these test results we decided to make different elements of the prototypes and to make a nice fusion of them.
+
+The user has to make a choice for each theme. He can do this to swip left or right. The info of the theme is on the same page instead of individually. The start button has been made clearer. Both prototypes also had a timer. We used the overview page of prototype A.
+
+### Usability test museumplein
+We tested the app with (real) people at museumplein. 
+
+<b>Conclusions</b>  
+1. On the text field the swipe function was removed because it also had a click function. However, all test persons tried to swip over the text field and therefore the swipe didn't succeed. 
+
+    <b>Improvement: </b>We have made sure that you can also swipe over the text field
+
+2. The test persons want to have more information about the themes.
+
+    <b>Improvement: </b>We decided to leave the text field unfolded by default.  
+
+3. The test subjects were not interested in the overview page this is because they are confident about the choices they made. This was the last step before they could start the tour. 
+
+    <b>Improvement: </b>We now put the overview page in a menu item but left it out of the flow.  
+ 
+
+Some pictures of the test  
+<details>
+<summary>Image 1</summary>
+
+![Test 1](https://github.com/Sam-Guliker/minor-vangogh/blob/master/src/images/test1.jpeg)
+
+</details>
+<details>
+<summary>Image 2</summary>
+
+![Test 2](https://github.com/Sam-Guliker/minor-vangogh/blob/master/src/images/test2.jpeg)
+
+</details>
+<details>
+<summary>Image 3</summary>
+
+![Test 3](https://github.com/Sam-Guliker/minor-vangogh/blob/master/src/images/test3.jpeg)
+
+</details>
 
 
 ### Webapp from Scratch
@@ -71,6 +123,9 @@ We wanted to make a web app to recreate the look and feel of a native app. We al
 We have chosen React because you can reuse components and the syntax is very easy. React also uses a virtual DOM. This one lives in your memory and not on your screen and looks at the most effective way to make changes to the real overseas departments. They also have a large community.
 
 In React I have worked a lot with map, filter and reduce. We had an array of objects with information about all the theme's. I had to use this data to do templating. Lists of selected and non-selected themes had to be splitten. The tour also had to be generated and all paintings had to be displayed by floor.
+
+<details>
+<summary>Code snippet map, filter en reduce</summary>
 
 ```
  setFloor() {
@@ -106,8 +161,114 @@ In React I have worked a lot with map, filter and reduce. We had an array of obj
   }
 
   ```
+  
+</details>
+
+<details>
+<summary>Code snippet of the swipe (dislike/like) functionality</summary>
+
+```
+handleTouchStart = e => {
+    this.setState({
+      mouseDown: true,
+      startPosition: typeof e === "object" ? e.touches[0].pageX : undefined,
+      device: "mobile",
+      transition: false
+    });
+};
+
+handleDragMove = e => {
+    let position;
+    if (this.state.device === "mobile") {
+      if (typeof e === "object") {
+        if (e.touches) {
+          position = e.touches[0].pageX;
+        }
+      } else {
+        position = undefined;
+      }
+    } else {
+      position = e.pageX;
+    }
+
+    let difFromStart;
+    if (position) {
+      difFromStart = position - this.state.startPosition;
+    } else {
+      difFromStart = 0;
+    }
+
+    let deg = difFromStart / 20;
+    let reducedSwipe = difFromStart / 5;
+
+    let opacity = 1 - Math.abs(difFromStart / 50);
+
+    this.setState({
+      transform: reducedSwipe,
+      pullDeltaX: difFromStart,
+      rotate: deg,
+      opacity
+    });
+  }; 
+  
+  ```
+
+[Full code of the swipe functionality](https://github.com/fennadew/minor-vangogh/blob/master/src/components/ThemesList.js)
+</details>
+
+<details>
+<summary>Code snippet of the swiping through paintings</summary>
+
+```
+  handleSwipeMove = e => {
+    e.preventDefault();
+    if (e.touches) {
+      if (!this.state.scrolling) {
+        let startPosition = this.state.startPosition;
+        let newIndex;
+        let floor = this.setFloor();
+
+        if (startPosition > e.touches[0].pageX) {
+          newIndex =
+            this.state.paintingIndex < floor.length - 1
+              ? this.state.paintingIndex + 1
+              : floor.length - 1;
+        } else if (startPosition < e.touches[0].pageX) {
+          newIndex =
+            this.state.paintingIndex > 0 ? this.state.paintingIndex - 1 : 0;
+        } else {
+          newIndex = this.state.paintingIndex;
+        }
+        this.setState({
+          scrolling: true,
+          paintingIndex: newIndex,
+          transform: this.state.pixelsPerProject * newIndex
+        });
+
+        timeOut = setTimeout(() => {
+          this.setState({
+            scrolling: false
+          });
+        }, 1000);
+      }
+    }
+  };
+```
+
+[Full code of swiping through paintings with their visibility on the map](https://github.com/fennadew/minor-vangogh/blob/master/src/components/Map.js)
+</details>
+
 
 ### CSS to the rescue
 
 ### 
 
+# Wishlist
+- [ ] When you swiped there will be a painting animation instead of a like or dislike icon
+- [ ] Loader more into Van Gogh's theme
+- [ ] More animations and smooth transitions
+
+
+# Lisence
+Copyright © 2018 Sam Guliker & Fenna de Wilde.  
+Released under the [MIT license](https://opensource.org/licenses/MIT)
