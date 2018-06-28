@@ -71,14 +71,15 @@ We both made a prototype. We had two ideas and wanted to see which users liked t
 
 <details>
 <summary>Pictures of the prototype I made</summary>
-<img src="https://github.com/fennadew/minor-vangogh/blob/master/images/picture1.png">
-<img src="https://github.com/fennadew/minor-vangogh/blob/master/images/picture2.png">
-<img src="https://github.com/fennadew/minor-vangogh/blob/master/images/picture3.png">
+<img  style={width: 50%} src="https://github.com/fennadew/minor-vangogh/blob/master/images/picture1.png">
+<img style={width: 50%} src="https://github.com/fennadew/minor-vangogh/blob/master/images/picture2.png">
+<img style={width: 50%} src="https://github.com/fennadew/minor-vangogh/blob/master/images/picture3.png">
 </details>
+
 
 [Link to branch](https://github.com/Sam-Guliker/minor-vangogh/tree/personal-tour)
 
-Findings
+<b>Findings</b>
 The following came out of the test results: 
 - People who want to make a personalised tour take the time to do so
 - The start button of prototype A was too clogged up
