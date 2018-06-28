@@ -6,10 +6,10 @@ We have designed and tested this interface in 5 weeks. The end result is a proto
 ![Giphy](https://github.com/fennadew/minor-vangogh/blob/master/images/gif.gif)
 
 # Table of Contents
-1. [Branches](#branches)
+1. [Branches by me](#branches-by-me)
 2. [Learning goals](#learning-goals)
 
-# Branches
+# Branches by me
 - [arduino](https://github.com/Sam-Guliker/minor-vangogh/tree/arduino)
     <p>In this branch I started the arduino connection with the WIFI and the connection with the distance sensor, so we could measure the people who were in front of the paintings.</p>
 
@@ -37,7 +37,6 @@ We have designed and tested this interface in 5 weeks. The end result is a proto
 
 # Learning goals
 
-
 ## Real time web 
 <b>Learning goal: Get real time data of a node MCU and connect this with Socket.js</b>
 
@@ -54,7 +53,7 @@ Ryan arrives at the gogh museum. This was an impulsive idea. He doesn't feel lik
 <b>Result</b><br>
 The user can choose from many themes. There are 14 in total. These are quite a few themes. By keeping the themes and information about the themes on one page, the user can quickly go through the themes. All they have to do is swipe left or right to add or skip a theme. The information can be folded in and out to better view the theme's image. The user can see how long the themes last and how long the tour lasts in total after adding the themes. He can look back at his selection or start the tour at any time. 
 
-I was in charge of the swiping page. You can checkout the [code here](https://github.com/fennadew/minor-vangogh/blob/master/src/components/Map.js)
+<b>I was in charge of the swiping page. You can checkout the </b>[code here](https://github.com/fennadew/minor-vangogh/blob/master/src/components/ThemesList.js)
 
 
 <b>User scenario tour</b><br>
@@ -63,6 +62,8 @@ Fransisco & Dafne are from Italy. They go to the van gogh museum to admire his w
 The app shows a floor plan for each floor and the paintings of the tour are shown on it. The paintings are in a list underneath the map with their name and number. The number op the painting is also shown on the map. The first painting is extra large indicated on the map.  When you scroll through to the next painting, that one will be enlarged on the map. 
 
 In the future we would like the visitor to be able to see where he is in the building. We faked that in the app for now. We would also want to be able to give them instructions on where to go.
+
+<b>I was in charge of the tour page. You can checkout the </b>[code here](https://github.com/fennadew/minor-vangogh/blob/master/src/components/Map.js)
 
 ### Testing
 
@@ -79,14 +80,14 @@ We both made a prototype. We had two ideas and wanted to see which users liked t
 
 [Link to branch](https://github.com/Sam-Guliker/minor-vangogh/tree/personal-tour)
 
-<b>Findings</b>
+<b>Findings</b>  
 The following came out of the test results: 
 - People who want to make a personalised tour take the time to do so
 - The start button of prototype A was too clogged up
 - People felt that the questionnaire was not personal and that it was vague
 - People did not bother to go to the info page of the theme
 
-Design Choices
+<b>Design Choices</b>  
 From these test results we decided to make different elements of the prototypes and to make a nice fusion of them.
 
 The user has to make a choice for each theme. He can do this to swip left or right. The info of the theme is on the same page instead of individually. The start button has been made clearer. Both prototypes also had a timer. We used the overview page of prototype A.
@@ -271,7 +272,25 @@ handleDragMove = e => {
 </details>
 
 
-### CSS to the rescue
+## Performance matters
+<b>Learning goal: Make a super fast app with high perfomance, so it gets the look and feel of a native app</b>
+
+<p>
+When you build an app with React, there are already some standard perfomance thinga in the package like the auto minification of JavaScript, and a service worker. 
+
+We wanted to have a Service Worker because it caches the pages and images. Images must be loaded quickly during swiping. For a nice effect, a service worker is certainly important. 
+
+I checked if I could improve anything myself. I added a .htaccess file to GZIP the website. I compressed all of the images I used via tinypic. I also minified my SASS. 
+
+Finally, I changed the manifest with the needed icons. </p>
+
+
+<details>
+<summary>The final audit</summary>
+
+<img src="https://github.com/fennadew/minor-vangogh/blob/master/images/perfomance.png">
+
+</details>
 
 ### 
 
