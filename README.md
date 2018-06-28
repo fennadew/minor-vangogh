@@ -78,9 +78,9 @@ We both made a prototype. We had two ideas and wanted to see which users liked t
 
 <details>
 <summary>Pictures of the prototype I made</summary>
-<img  style={width: 50%} src="https://github.com/fennadew/minor-vangogh/blob/master/images/picture1.png">
-<img style={width: 50%} src="https://github.com/fennadew/minor-vangogh/blob/master/images/picture2.png">
-<img style={width: 50%} src="https://github.com/fennadew/minor-vangogh/blob/master/images/picture3.png">
+<img  src="https://github.com/fennadew/minor-vangogh/blob/master/images/picture1.png">
+<img src="https://github.com/fennadew/minor-vangogh/blob/master/images/picture2.png">
+<img src="https://github.com/fennadew/minor-vangogh/blob/master/images/picture3.png">
 </details>
 
 
@@ -281,11 +281,45 @@ handleDragMove = e => {
 ## CSS to the rescue
 <b>Learning goal: Make a pleasurable interface for the visitors of the van Gogh museum</b>
 
-We had thought of adding a zero state. I implemented the zero state in the main functionality of the app (the swipe) so that people immediately understand the interface. 
-
 The swipe is a pleasurable functionality because it animates your interaction. Because it's so easy and feels good, the user enjoys doing it. 
 
 The further you swip to the left or right, the more the themes change into a like or dislike. This gives the user good feedback about what he is doing. 
+
+We also wanted a zero state. I implemented the zero state in the main functionality of the app (the swipe) so that people immediately understand the interface. 
+
+<b>Accessibility</b>
+* <b>Custom fonts</b>: No icon fonts are used and a fallback font is used. This font is displayed when the custom font cannot be loaded or custom fonts have been disabled by the user.
+I tested these on custom fonts using the Chrome extension [force fonts](https://chrome.google.com/webstore/detail/force-font/iidenkflofaiinggabfmdjbomolidnie). Works the same without custom fonts. The extension allows you to replace the custom font with the desired system font such as 'Arial'.
+ <details>
+  <summary>Test screenshot without custom font</summary>
+<img src="https://github.com/fennadew/minor-vangogh/blob/master/images/customfonts.png"  alt="zonder custom font">
+</details>
+
+* <b>Images</b>: All images have an alto attribute. If the app is ever used by a mobile screen reader, it may have added value.
+
+* <b>Color</b>: Different colours have been used. We have made sure that the interface can also be understood by the blind. For example, the green thumb up is still clear when it is no longer green.
+
+We have tested the app to see if the colors give enough contrast and if color-blind people can see and read everything.
+
+ <details>
+  <summary>Screenshot of color blind tests</summary>
+<img src="https://github.com/fennadew/minor-vangogh/blob/master/images/color1.png" alt="Color blind">
+<img src="https://github.com/fennadew/minor-vangogh/blob/master/images/color2.png"  alt="Color blind">
+<img src="https://github.com/fennadew/minor-vangogh/blob/master/images/color3.png"  alt="Color blind">
+<img src="https://github.com/fennadew/minor-vangogh/blob/master/images/color4.png"  alt="Color blind">
+<img src="https://github.com/fennadew/minor-vangogh/blob/master/images/color5.png"  alt="Color blind">
+<img src="https://github.com/fennadew/minor-vangogh/blob/master/images/color6.png"  alt="Color blind">
+
+</details>
+
+* <b>Broadband internet</b>: A service worker has been added to the website. When the page has already been visited (and therefore cached) the loading time on and offline is 318ms and 2,37s with slow 3G. Super fast!
+
+ <details>
+  <summary>Screenshot van service worker</summary>
+<img src="https://github.com/fennadew/minor-vangogh/blob/master/images/network.png"  alt="service worker">
+<img src="https://github.com/fennadew/minor-vangogh/blob/master/images/3g.png"  alt="service worker">
+
+</details>
 
 ## Performance matters
 <b>Learning goal: Make a super fast app with high perfomance, so it gets the look and feel of a native app</b>
