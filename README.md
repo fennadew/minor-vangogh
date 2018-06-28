@@ -1,4 +1,6 @@
 # meesterproef
+[Link to the prototype](https://sam-guliker.github.io/minor-vangogh/)
+
 This project is made in collaboration with Sam Guliker and is commissioned by the [Vincent Van Gogh museum](https://www.vangoghmuseum.nl/). The project is an addition to the existing multimedia tour. The assignment was to develop an interface which visitors from the museum can personalize their visit with by choosing various themes.
 
 We have designed and tested this interface in 5 weeks. The end result is a prototype of the personalized multimedia tour.
@@ -10,28 +12,28 @@ We have designed and tested this interface in 5 weeks. The end result is a proto
 2. [Learning goals](#learning-goals)
 
 # Branches by me
-- [arduino](https://github.com/Sam-Guliker/minor-vangogh/tree/arduino)
+- [arduino](https://github.com/fennadew/minor-vangogh/tree/arduino)
     <p>In this branch I started the arduino connection with the WIFI and the connection with the distance sensor, so we could measure the people who were in front of the paintings.</p>
 
-- [Personal-tour](https://github.com/Sam-Guliker/minor-vangogh/tree/personal-tour)
+- [Personal-tour](https://github.com/fennadew/minor-vangogh/tree/personal-tour)
    <p>In this branch I made a protype for the A/B test. You could swipe through themes and add them to your list.</p> 
    
-- [swipe](https://github.com/Sam-Guliker/minor-vangogh/tree/swipe)
+- [swipe](https://github.com/fennadew/minor-vangogh/tree/swipe)
    <p>When we started this branch we decided to take the app in an different direction. We took the apps from the branches  personal-tour and questionnaire togheter and wanted to create an app similar to Tinder. In this branch I made the swipe        page and the swipe functionality.</p>
 
-- [features](https://github.com/Sam-Guliker/minor-vangogh/tree/features)
+- [features](https://github.com/fennadew/minor-vangogh/tree/features)
     <p>In this branch I improved the swipe functionality and started animations of the buttons which Sam finished.</p>
    
-- [hotfix](https://github.com/Sam-Guliker/minor-vangogh/tree/hotfix)
+- [hotfix](https://github.com/fennadew/minor-vangogh/tree/hotfix)
   <p>In this branch I fixed all known bugs and let the user add and delete themes on the overview page.</p>
    
-- [zerostate](https://github.com/Sam-Guliker/minor-vangogh/tree/zerostate)
+- [zerostate](https://github.com/fennadew/minor-vangogh/tree/zerostate)
    <p>In this branch I added zero states to the swipe page.</p>
    
-- [improvement-1](https://github.com/Sam-Guliker/minor-vangogh/tree/improvement-1)
+- [improvement-1](https://github.com/fennadew/minor-vangogh/tree/improvement-1)
    <p>In this branch I fixed the issue we encountered during testing. Because the info of the themes could collapse and expand, I removed the swiping functionallity, so it didn't had two interactions (swiping is the other one). However, the info is pretty big so people started swiping and nothing happend. So I added the swiping interaction as well and it worked just fine.</p>
 
-- [improvement-2](https://github.com/Sam-Guliker/minor-vangogh/tree/improvement-2)
+- [improvement-2](https://github.com/fennadew/minor-vangogh/tree/improvement-2)
    <p>In this branch I worked on the tour page.</p
 
 
@@ -54,6 +56,7 @@ Ryan arrives at the gogh museum. This was an impulsive idea. He doesn't feel lik
 The user can choose from many themes. There are 14 in total. These are quite a few themes. By keeping the themes and information about the themes on one page, the user can quickly go through the themes. All they have to do is swipe left or right to add or skip a theme. The information can be folded in and out to better view the theme's image. The user can see how long the themes last and how long the tour lasts in total after adding the themes. He can look back at his selection or start the tour at any time. 
 
 <b>I was in charge of the swiping page. You can checkout the </b>[code here](https://github.com/fennadew/minor-vangogh/blob/master/src/components/ThemesList.js)
+![Swipe](https://github.com/Sam-Guliker/minor-vangogh/blob/master/images/swipe.png)
 
 
 <b>User scenario tour</b><br>
@@ -64,6 +67,9 @@ The app shows a floor plan for each floor and the paintings of the tour are show
 In the future we would like the visitor to be able to see where he is in the building. We faked that in the app for now. We would also want to be able to give them instructions on where to go.
 
 <b>I was in charge of the tour page. You can checkout the </b>[code here](https://github.com/fennadew/minor-vangogh/blob/master/src/components/Map.js)
+
+![Tour](https://github.com/Sam-Guliker/minor-vangogh/blob/master/images/tour.png)
+
 
 ### Testing
 
@@ -113,19 +119,19 @@ Some pictures of the test
 <details>
 <summary>Image 1</summary>
 
-![Test 1](https://github.com/Sam-Guliker/minor-vangogh/blob/master/src/images/test1.jpeg)
+![Test 1](https://github.com/fennadew/minor-vangogh/blob/master/src/images/test1.jpeg)
 
 </details>
 <details>
 <summary>Image 2</summary>
 
-![Test 2](https://github.com/Sam-Guliker/minor-vangogh/blob/master/src/images/test2.jpeg)
+![Test 2](https://github.com/fennadew/minor-vangogh/blob/master/src/images/test2.jpeg)
 
 </details>
 <details>
 <summary>Image 3</summary>
 
-![Test 3](https://github.com/Sam-Guliker/minor-vangogh/blob/master/src/images/test3.jpeg)
+![Test 3](https://github.com/fennadew/minor-vangogh/blob/master/src/images/test3.jpeg)
 
 </details>
 
@@ -276,7 +282,7 @@ handleDragMove = e => {
 <b>Learning goal: Make a super fast app with high perfomance, so it gets the look and feel of a native app</b>
 
 <p>
-When you build an app with React, there are already some standard perfomance thinga in the package like the auto minification of JavaScript, and a service worker. 
+When you build an app with React, there are already some standard perfomance things in the package like the auto minification of JavaScript, and a service worker. 
 
 We wanted to have a Service Worker because it caches the pages and images. Images must be loaded quickly during swiping. For a nice effect, a service worker is certainly important. 
 
